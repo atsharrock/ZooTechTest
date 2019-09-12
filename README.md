@@ -1,9 +1,9 @@
-# Tech Test
+# Zoo Simulator
 
-### Completed for a company in Worcester.
+Tech test completed for a company in Worcester
 
 Write a simple Zoo simulator which contains 3 different types of animal:  
- monkey, giraffe and elephant.  The zoo should open with 5 of each type of animal.
+monkey, giraffe and elephant.  The zoo should open with 5 of each type of animal.
   
 Each animal has a health value held as a percentage (100% is completely healthy).  Every animal starts at 100% health. 
 This value should be a floating point value. 
