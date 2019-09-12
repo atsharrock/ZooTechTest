@@ -1,4 +1,6 @@
-# A techtest for a Dyball Associates. A company in Worcester.
+# Tech Test
+
+### Completed for a company in Worcester.
 
 Write a simple Zoo simulator which contains 3 different types of animal:  
  monkey, giraffe and elephant.  The zoo should open with 5 of each type of animal.
