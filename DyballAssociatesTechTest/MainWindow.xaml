@@ -1,0 +1,127 @@
+﻿<Window x:Class="DyballAssociatesTechTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Dyball Associates Zoo" Height="480" Width="450">
+
+	<StackPanel>
+		<Label
+			Content="Dyball Associates Zoo"
+			HorizontalAlignment="Center"
+			FontSize="40"
+		/>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+			<Label Grid.Column="0" Grid.Row="0" Content="Time:" Name="hourslabel" HorizontalAlignment="Center" FontWeight="Bold"/>
+			<Label Grid.Column="0" Grid.Row="1" Content="00:00" Name="timeContentLabel" HorizontalAlignment="Center"/>
+			<Label Grid.Column="0" Grid.Row="2" Content="{Binding Zootime.Time}" Name="timeContentLabel1" HorizontalAlignment="Center"/>
+
+		</Grid>
+		
+		<TextBlock Text="Animals:" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+		<Border BorderThickness="1" Margin="10 10 10 10">
+			<Grid Name="MonkeysGrid">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+
+				<Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Monkeys[0]}"/>
+				<Label Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Monkeys[1]}"/>
+				<Label Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Monkeys[2]}"/>
+				<Label Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Monkeys[3]}"/>
+				<Label Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Monkeys[4]}"/>
+
+				<TextBlock Text="{Binding Monkeys[0].HealthString}" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" />
+				<TextBlock Text="{Binding Monkeys[1].HealthString}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" />
+				<TextBlock Text="{Binding Monkeys[2].HealthString}" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" />
+				<TextBlock Text="{Binding Monkeys[3].HealthString}" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" />
+				<TextBlock Text="{Binding Monkeys[4].HealthString}" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" />
+
+			</Grid>
+		</Border>
+
+		<Border BorderThickness="1" Margin="10 10 10 10">
+			<Grid Name="GiraffesGrid">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+
+				</Grid.RowDefinitions>
+
+				<Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Giraffes[0]}"/>
+				<Label Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Giraffes[1]}"/>
+				<Label Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Giraffes[2]}"/>
+				<Label Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Giraffes[3]}"/>
+				<Label Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Giraffes[4]}"/>
+
+				<TextBlock Text="{Binding Giraffes[0].HealthString}" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"/>
+				<TextBlock Text="{Binding Giraffes[1].HealthString}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"/>
+				<TextBlock Text="{Binding Giraffes[2].HealthString}" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"/>
+				<TextBlock Text="{Binding Giraffes[3].HealthString}" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center"/>
+				<TextBlock Text="{Binding Giraffes[4].HealthString}" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center"/> 
+
+			</Grid>
+		</Border>
+
+		<Border BorderThickness="1" Margin="10 10 10 10">
+			<Grid Name="ElephantsGrid">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+
+				<Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Elephants[0]}"/>
+				<Label Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Elephants[1]}"/>
+				<Label Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Elephants[2]}"/>
+				<Label Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Elephants[3]}"/>
+				<Label Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Content="{Binding Elephants[4]}"/>
+
+				<TextBlock Text="{Binding Elephants[0].HealthString}" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"/>
+				<TextBlock Text="{Binding Elephants[1].HealthString}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"/>
+				<TextBlock Text="{Binding Elephants[2].HealthString}" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"/>
+				<TextBlock Text="{Binding Elephants[3].HealthString}" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center"/>
+				<TextBlock Text="{Binding Elephants[4].HealthString}" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center"/>
+
+			</Grid>
+		</Border>
+
+		<Button Content="Feed" Width="100" Name="FeedButton" Click="FeedButton_Click"/>
+		
+	</StackPanel>
+</Window>
