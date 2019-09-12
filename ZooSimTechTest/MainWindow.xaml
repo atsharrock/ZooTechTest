@@ -1,14 +1,14 @@
-﻿<Window x:Class="DyballAssociatesTechTest.MainWindow"
+﻿<Window x:Class="ZooSimTechTest.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Dyball Associates Zoo" Height="480" Width="450">
+        Title="Zoo Sim Tech Test" Height="480" Width="450">
 
 	<StackPanel>
 		<Label
-			Content="Dyball Associates Zoo"
+			Content="Zoo Sim Tech Test"k
 			HorizontalAlignment="Center"
 			FontSize="40"
 		/>
@@ -24,8 +24,8 @@
 			</Grid.RowDefinitions>
 
 			<Label Grid.Column="0" Grid.Row="0" Content="Time:" Name="hourslabel" HorizontalAlignment="Center" FontWeight="Bold"/>
-			<Label Grid.Column="0" Grid.Row="1" Content="00:00" Name="timeContentLabel" HorizontalAlignment="Center"/>
 			<Label Grid.Column="0" Grid.Row="2" Content="{Binding Zootime.Time}" Name="timeContentLabel1" HorizontalAlignment="Center"/>
+			
 
 		</Grid>
 		
